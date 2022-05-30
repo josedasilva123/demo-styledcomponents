@@ -1,6 +1,7 @@
 import React from 'react'
-import styled from 'styled-components'
+import {TextExample} from './style'
 
+/*
 //Component
 const TextExample = styled.h1`
     // CSS
@@ -9,12 +10,13 @@ const TextExample = styled.h1`
     //Javascript
     color: ${(props) => props.color};
 `
+*/
 
 const FirstExample = () => {
   return (
     <div>
         { /* Passagem de props e importação de componente */ }
-        <TextExample color="red">Teste</TextExample>
+        <TextExample color="green">Teste</TextExample>
     </div>
   )
 }
