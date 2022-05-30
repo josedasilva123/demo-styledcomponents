@@ -1,20 +1,13 @@
-import React from 'react'
-import styled from 'styled-components'
+import React, {useState} from 'react'
+import { TextExample } from './style';
 
-//Component
-const TextExample = styled.h1`
-    // CSS
-    font-family: sans-serif;
-    font-size: 2rem;
-    //Javascript
-    color: ${(props) => props.color};
-`
 
 const FirstExample = () => {
+  const [color, setColor] = useState('purple');
   return (
     <div>
         { /* Passagem de props e importação de componente */ }
-        <TextExample color="red">Teste</TextExample>
+        <TextExample color={color}>Teste</TextExample>
     </div>
   )
 }
